@@ -24,19 +24,15 @@ class MainActivity() : AppCompatActivity() {
                 nameAisha.text = "Бобка красавчик!"
                 button.text = "Покажи мурку"
             }
-
-
             if (count == 2) {
                 foto.setImageResource(drawable.ic_murka)
                 button.text = "покажи бибку"
                 nameAisha.text = "Мурка зверь!"
             }
-
             if (count == 3) {
                 foto.setImageResource(drawable.ic_bibka)
                 button.text = "покажи бобку"
                 nameAisha.text = "Бибка красавица!"
-
             }
         }
     }
