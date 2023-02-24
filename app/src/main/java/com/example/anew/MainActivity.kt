@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.anew.R.*
 
-class MainActivity() : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private var count: Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
