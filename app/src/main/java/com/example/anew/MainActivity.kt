@@ -9,7 +9,7 @@ import com.example.anew.R.*
 
 class MainActivity() : AppCompatActivity() {
     private var count:Int= 1
-    private val bibka=2
+    private val bibka=3
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_main)
