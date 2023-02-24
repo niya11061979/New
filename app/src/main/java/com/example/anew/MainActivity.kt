@@ -8,7 +8,7 @@ import android.widget.TextView
 import com.example.anew.R.*
 
 class MainActivity() : AppCompatActivity() {
-    private var state = true
+    private var count:Int= 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_main)
@@ -16,19 +16,21 @@ class MainActivity() : AppCompatActivity() {
         val foto = findViewById<ImageView>(id.foto)
         val button: Button = findViewById(id.button_change_name)
         button.setOnClickListener {
-            state = !state
-            if (state) {
-                foto.setImageResource(R.drawable.ic_bobka)
-                nameAisha.text = "Бобка красавчик!"
-                button.text = "Покажи мурку"
-            } else {
-                foto.setImageResource(R.drawable.ic_murka)
-                button.text = "Покажи бобку"
-                nameAisha.text = "Мурка зверь!"
+
+                 if (count==1) {
+                    foto.setImageResource(drawable.ic_bobka)
+                    nameAisha.text = "Бобка красавчик!"
+                    button.text = "Покажи мурку"
+                } else {
+                    foto.setImageResource(drawable.ic_murka)
+                    button.text = "Покажи бобку"
+                    nameAisha.text = "Мурка зверь!"
+                }
             }
         }
     }
-}
+
+
 
 
 
